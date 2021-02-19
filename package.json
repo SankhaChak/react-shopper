@@ -17,10 +17,15 @@
     "client/node_modules"
   ],
   "dependencies": {
+    "@craco/craco": "^6.1.1",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^9",
     "dotenv": "^8.2.0",
     "express": "^4.16.4",
+    "postcss": "^7",
     "react-router-dom": "^5.2.0",
     "stripe": "^8.131.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "use-shopping-cart": "2.1.0"
   },
   "license": "MIT",
