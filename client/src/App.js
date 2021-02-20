@@ -6,6 +6,7 @@ import Result from "./pages/Result";
 import { loadStripe } from "@stripe/stripe-js";
 import { CartProvider } from "use-shopping-cart";
 import { Toaster } from "react-hot-toast";
+import Navbar from "./components/Navbar";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ function App() {
         currency="USD"
       >
         <BrowserRouter>
+          <Navbar />
           <Toaster position="top-right" />
           <Switch>
             <Route exact path="/" component={Home} />
