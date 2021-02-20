@@ -1,5 +1,11 @@
-const AddToCart = () => {
-  const handleAddItem = () => {};
+import { useShoppingCart } from "use-shopping-cart";
+
+const AddToCart = ({ product }) => {
+  const { addItem } = useShoppingCart();
+
+  const handleAddItem = () => {
+    addItem(product);
+  };
 
   return (
     <button
