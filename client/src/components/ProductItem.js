@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import formatProductPrice from "./utils/formatProductPrice";
 
 const ProductItem = ({ product }) => {
+  const price = formatProductPrice(product);
+
   return (
     <div className="p-4 md:w-1/3">
       <div className="h-full border-2 bg-gray-800 rounded-lg overflow-hidden">
@@ -39,7 +42,7 @@ const ProductItem = ({ product }) => {
               </svg>
             </Link>
             <span className="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-lg pr-3 py-1 border-gray-800 font-bold">
-              {product?.price}
+              {price}
             </span>
           </div>
         </div>

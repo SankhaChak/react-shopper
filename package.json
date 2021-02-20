@@ -27,7 +27,7 @@
     "react-router-dom": "^5.2.0",
     "stripe": "^8.131.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "use-shopping-cart": "2.1.0"
+    "use-shopping-cart": "^2.4.2"
   },
   "license": "MIT",
   "devDependencies": {
