@@ -48,8 +48,8 @@ const Product = () => {
               <span className="title-font font-medium text-2xl text-white">
                 {price}
               </span>
-              <AddToCart product={"product"} />
-              <RemoveFromCart product={"product"} />
+              <AddToCart product={product} />
+              <RemoveFromCart product={product} />
             </div>
           </div>
         </div>

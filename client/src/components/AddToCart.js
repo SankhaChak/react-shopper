@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 import { useShoppingCart } from "use-shopping-cart";
 
 const AddToCart = ({ product }) => {
@@ -5,6 +6,7 @@ const AddToCart = ({ product }) => {
 
   const handleAddItem = () => {
     addItem(product);
+    toast.success(`${product.name} has been added to your cart`);
   };
 
   return (
